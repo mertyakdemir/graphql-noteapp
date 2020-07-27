@@ -1,0 +1,19 @@
+type Query{
+    reflect(id: ID!): Reflect!
+    reflects: [Reflect!]!
+}
+
+type Reflect{
+    id: ID!
+    text: String!
+    user: User!
+}
+
+type Mutation{
+    addText(data: addTextFo): Reflect
+}
+
+input addTextFo {
+    text: String!
+    userID: ID
+}

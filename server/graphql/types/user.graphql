@@ -1,0 +1,19 @@
+type Query{
+  user(id: ID!): User!
+  users: [User!]!
+}
+
+type User{
+  id: ID!
+  userName: String!
+  reflects: [Reflect!]!
+}
+
+type Mutation {
+  addUser(data: addUserFo!): User
+}
+
+input addUserFo {
+  userName: String!,
+  password: String!
+}
