@@ -26,7 +26,7 @@ class Home extends Component {
 		return (
 			<div>
 				<Mutation mutation={ADD_TEXT} variables={{...this.state}} refetchQueries={[{ query: GET_TEXT}]}>
-                 {
+                                 {
 					 (addText, {loading, error }) => (
 						<form id="form1" onSubmit={e => {
 							this.onSubmit(e, addText);
@@ -46,14 +46,14 @@ class Home extends Component {
 				console.log(data)
 				return (
 					<div>
-						<ul>
+					<ul>
 				    	{
 						data.reflects.map(reflect => (
 							<li key={reflect.id}>
 								<strong>ID: {reflect.id} - <span style={{color: "green"}}>{reflect.text}</span> </strong>
 							</li>
 				        ))
-					    }
+					 }
 				        </ul>
 						<h3>Text count: {data.reflects.length}</h3>
 					</div>
