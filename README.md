@@ -14,6 +14,10 @@ query {
 }
 `
 
+**ADD TEXT**
+
+`mutation {addText(data: { text: "deploy" }) {text}}`
+
 ----------------------
 
 cd server
