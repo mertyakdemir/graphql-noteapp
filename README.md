@@ -6,7 +6,7 @@ npm install
 
 npm run start:dev
 
-new terminal
+** NEW TERMINAL **
 
 cd client
 
