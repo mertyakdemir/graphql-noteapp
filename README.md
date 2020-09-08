@@ -9,7 +9,6 @@ https://noteaddapp.herokuapp.com/graphql
 query {
   
   reflects {
-    
     text
   }
 }
