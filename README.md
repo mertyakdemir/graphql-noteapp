@@ -7,7 +7,9 @@ https://noteaddapp.herokuapp.com/graphql
 **QUERY**
 
 query {
+  
   reflects {
+    
     text
   }
 }
