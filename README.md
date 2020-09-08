@@ -16,7 +16,7 @@ query {
 
 **ADD TEXT**
 
-`mutation {addText(data: { text: "deploy" }) {text}}`
+`mutation {addText (data: { text: "deploy" }) {text}}`
 
 ----------------------
 
